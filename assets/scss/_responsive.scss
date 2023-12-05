@@ -1,0 +1,234 @@
+// @import './reset.scss';
+
+
+// tablet
+@media (min-width:768px) and (max-width:1366px) {
+    .header-contact-icon i {
+        font-size: 1.5em !important;
+    }
+
+    .header-contact {
+        :first-child {
+            font-size: 14px !important;
+        }
+
+        :last-child {
+            font-size: 20px !important;
+        }
+    }
+
+
+    .my-container {
+
+        margin-inline: auto !important;
+
+        .hero-content {
+            margin: var(--fs-17) 0;
+
+            h2 {
+                font-size: var(--fs-2) !important;
+
+                span {
+                    font-size: 5.7rem !important;
+                }
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+
+            a {
+                font-size: 13px !important;
+            }
+        }
+    }
+}
+
+// mobile
+@media (max-width:576px) {
+    .my-container {
+        max-width: 23rem !important;
+    }
+
+    .burger-menu {
+        display: block !important;
+    }
+
+    // header 
+    .header-content {
+        display: none !important;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    #about {
+        .my-container {
+            grid-template-columns: initial !important;
+
+            .left {
+                .shape {
+                    display: none !important;
+                }
+
+                .branch-count {
+                    width: 57% !important;
+                    left: 151px !important;
+
+                }
+
+                .line {
+                    left: 98% !important;
+                }
+            }
+
+            .right {
+                width: 100% !important;
+
+                .title {
+                    font-size: 20px !important;
+                }
+
+                h2 {
+                    font-size: 30px !important;
+                }
+                .btn{
+                    font-size: 1rem !important;
+                }
+            }
+        }
+
+    }
+
+    // hero
+    .hero-content {
+        background-color: var(--black_60);
+        text-align: center;
+        margin: var(--fs-14) 0;
+        padding: 30px;
+
+        h2 {
+            font-size: 3.7rem !important;
+
+            span {
+                font-size: var(--fs-3) !important;
+            }
+        }
+
+        .hero-text {
+            font-size: 17px !important;
+            line-height: 1.6;
+        }
+
+        a {
+            font-size: 14px !important;
+            padding: 8px 20px !important;
+        }
+    }
+}
+
+
+@media (min-width:768px)and(max-width:1180px) {
+    .my-container {
+        max-width: 720px !important;
+    }
+
+    .burger-menu {
+        display: block !important;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    #about {
+        .my-container {
+
+            grid-template-columns: initial !important;
+
+            .left {
+                .shape {
+                    display: block !important;
+                }
+
+                .branch-count {
+                    width: 33% !important;
+                    left: 31% !important;
+                }
+
+                .line {
+                    left: 63.6% !important;
+                }
+            }
+
+            .right {
+                width: 100% !important;
+
+                .title {
+                    font-size: 20px !important;
+                    margin-block-end: 10px !important;
+                }
+
+                h2 {
+                    font-size: 35px !important;
+                }
+
+                
+            }
+        }
+
+    }
+}
+
+@media (min-width:1024px)and(max-width:1366px) {
+    .my-container {
+        max-width: 1036px !important;
+    }
+
+    .burger-menu {
+        display: none !important;
+    }
+
+    nav {
+        display: block !important;
+    }
+
+    #about {
+        .my-container {
+
+            grid-template-columns: initial !important;
+
+            .left {
+                .shape {
+                    display: block !important;
+                }
+
+                .branch-count {
+                    width: 26% !important;
+                    left: 23% !important;
+                }
+
+
+                .line {
+                    left: 48.8% !important;
+                }
+            }
+
+            .right {
+                width: 100% !important;
+
+                .title {
+                    font-size: 20px !important;
+                    margin-block-end: 10px !important;
+                }
+
+                h2 {
+                    font-size: 30px !important;
+                }
+            }
+        }
+
+    }
+}
