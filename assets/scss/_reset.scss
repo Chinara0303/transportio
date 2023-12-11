@@ -21,14 +21,18 @@ button {
     outline: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+h2,h3{
+    font-family: var(--ff-oswald);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    height: 1000vh;
 }
 
 :root {
@@ -87,6 +91,5 @@ body {
     --shadow-3: 0px 0px 60px hsla(202, 75%, 47%, 0.5);
 
 
-    --section-padding:7.5rem;
+    --section-padding: 7.5rem;
 }
-

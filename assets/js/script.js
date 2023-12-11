@@ -36,3 +36,16 @@ window.addEventListener('scroll',function(){
         header.classList.remove('active')
     }
 })
+
+
+let backToTopBtn= document.querySelector('.back-top-btn');
+
+window.addEventListener("scroll",function(){
+    if(window.scrollY >100){
+        backToTopBtn.classList.add("active")
+    }
+    else{
+        backToTopBtn.classList.remove("active")
+
+    }
+})
