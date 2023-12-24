@@ -28,6 +28,10 @@ html{
 h2,h3{
     font-family: var(--ff-oswald);
 }
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+}
 
 * {
     margin: 0;

@@ -28,6 +28,11 @@ h2, h3 {
   font-family: var(--ff-oswald);
 }
 
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -329,11 +334,6 @@ h2, h3 {
   height: 100%;
   opacity: 0;
   visibility: hidden;
-}
-
-.container {
-  max-width: 1180px;
-  margin-inline: auto;
 }
 
 header {
