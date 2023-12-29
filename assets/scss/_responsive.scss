@@ -1,5 +1,3 @@
-// @import './reset.scss';
-
 
 
 // mobile
@@ -148,6 +146,22 @@
         }
     }
 
+    #detail{
+        .container{
+            display: inherit !important;
+            margin-inline: auto !important;
+                img{
+                    width: 100%;
+                }
+            .right{
+                .services-list {
+                    position: initial !important;
+                    width: 100% !important;
+                    margin-top: var(--fs-4);
+                }
+            }
+        }
+    }
     .footer {
         .footer-top {
             display: initial !important;

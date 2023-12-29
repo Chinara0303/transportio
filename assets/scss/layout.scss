@@ -2,6 +2,18 @@
 @import '_responsive.scss';
 @import './partials/mixin';
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black_60);
+    z-index: 5;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
 // header 
 header {
     min-height: 100vh;
@@ -254,6 +266,7 @@ footer {
         }
 
         .footer-list {
+            margin-top: var(--fs-10);
             .footer-list-title {
                 font-size: var(--fs-8);
                 border-block-end: 3px solid var(--dark-orange);

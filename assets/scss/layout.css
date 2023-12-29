@@ -181,6 +181,18 @@ h2, h3 {
     font-size: 2rem !important;
     padding: 30px 0;
   }
+  #detail .container {
+    display: inherit !important;
+    margin-inline: auto !important;
+  }
+  #detail .container img {
+    width: 100%;
+  }
+  #detail .container .right .services-list {
+    position: initial !important;
+    width: 100% !important;
+    margin-top: var(--fs-4);
+  }
   .footer .footer-top {
     display: initial !important;
   }
@@ -324,6 +336,18 @@ h2, h3 {
     font-size: 13px !important;
   }
 }
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--black_60);
+  z-index: 5;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+}
+
 header {
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -522,6 +546,9 @@ footer .footer-top .social-list .social-link {
 }
 footer .footer-top .social-list .social-link:hover {
   background-color: var(--prussian-blue);
+}
+footer .footer-top .footer-list {
+  margin-top: var(--fs-10);
 }
 footer .footer-top .footer-list .footer-list-title {
   font-size: var(--fs-8);
