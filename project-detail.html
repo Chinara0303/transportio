@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/scss/detail.css">
-    <link rel="stylesheet" href="./assets/scss/layout.css">
+    <link rel="stylesheet" href="./assets/scss/common/common.css">
+    <link rel="stylesheet" href="./assets/scss/layout/layout.css">
+    <link rel="stylesheet" href="./assets/scss/detail/detail.css">
+    <link rel="stylesheet" href="./assets/scss/project/project_detail.css">
 </head>
 
 <body id="top">
@@ -27,11 +29,11 @@
             </h1>
             <nav>
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#service">Service</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
 
@@ -48,8 +50,6 @@
             <div class="burger-menu">
                 <img src="./assets/imgs/menu.png" alt="">
             </div>
-
-
         </div>
 
         <!-- start navbar -->
@@ -64,11 +64,11 @@
             </div>
             <div class="bottom">
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#service">Service</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -77,11 +77,13 @@
         <!-- start breadcrumb section -->
         <section id="breadcrumb-area">
             <div class="container">
-                <h1 class="service-name"></h1>
+                <h1 class="project-name">Warehouse inventory</h1>
                 <span>
-                    <a href="index.html#service">Services </a>
-                    <i class="fa-solid fa-arrow-right fa-sm"></i>
-                    <a class="service-name" href="blog.html"> </a>
+                    <span>
+                        <a href="index.html">Home </a>
+                        <i class="fa-solid fa-arrow-right fa-sm"></i>
+                        <a class="project-name" href="index.html#projects"> Warehouse inventory</a>
+                    </span>
                 </span>
             </div>
         </section>
@@ -91,38 +93,37 @@
     <!-- end header -->
 
     <main>
-        <section id="detail">
+        <section id="detail" class="project-detail">
             <div class="container">
                 <div class="left">
                     <div class="img">
-                        <img src="" alt="">
+                        <img src="./assets/imgs/project-details-img1.jpg" alt="">
                     </div>
                     <div class="content-header">
                         <div class="icon">
-                            <img src="" alt="">
+                            <img src="./assets/imgs/service-icon-1.png" alt="">
                         </div>
                         <div class="title">
-                            <h2 class="service-name"></h2>
+                            <h2 class="project-name">Warehouse Inventory</h2>
                         </div>
                     </div>
                     <div class="content">
-                        <!-- <p>
-                            It is a long established fact that a reader will be distracted by the readable content of a
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
                             page when looking at its layout. The point of using Lorem Ipsum is that it has a
                             more-or-less normal distribution of letters, as opposed to using 'Content here, content
                             here', making it look like readable English. packages and web page editors now use Lorem
                             Ipsum as their default model.
                         </p>
-                        <p>Packages and web page editors now use Lorem Ipsum as their default model textlayout. The
+                        <p>
+                            Packages and web page editors now use Lorem Ipsum as their default model textlayout. The
                             point of using are Ipsum is that it has a more-or-less normal distribution of letters, as
                             opposed to using 'Content here content normal distribution of letters as opposed to here
                             making readable making.
-                        </p> -->
-
+                        </p>
                     </div>
                     <div class="content-header">
                         <div class="title">
-                            <h2>Benefit of Service</h2>
+                            <h2>Project Challenge</h2>
                         </div>
                     </div>
                     <div class="content">
@@ -130,8 +131,8 @@
                             point of using the some is that it has a more-or-less normal distribution of letters as
                             opposed to using.</p>
                     </div>
-                    <div class="benefit-services">
-                        <div class="benefit-service">
+                    <div class="project-challenge">
+                        <div class="challenge">
                             <div class="icon-box">
                                 <i class="fa-solid fa-check-double fa-xl"></i>
                             </div>
@@ -139,7 +140,7 @@
                                 <p>Lorem, ipsum dolor.</p>
                             </div>
                         </div>
-                        <div class="benefit-service">
+                        <div class="challenge">
                             <div class="icon-box">
                                 <i class="fa-solid fa-check-double fa-xl"></i>
                             </div>
@@ -147,7 +148,7 @@
                                 <p>Lorem, ipsum dolor.</p>
                             </div>
                         </div>
-                        <div class="benefit-service">
+                        <div class="challenge">
                             <div class="icon-box">
                                 <i class="fa-solid fa-check-double fa-xl"></i>
                             </div>
@@ -156,66 +157,19 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="right">
-                    <div class="services-list">
+                    <div class="content-header">
                         <div class="title">
-                            <h2>Services List</h2>
+                            <h2>How it work</h2>
                         </div>
-                        <ul class="sidebar-services-list">
-                            <li id="1">
-                                <a href="">
-                                    <span>Air Freight</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="2">
-                                <a href="">
-                                    <span>Road Freight</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="3">
-                                <a href="">
-                                    <span>Ocean Freight</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="4">
-                                <a href="">
-                                    <span>Rail Freight</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="5">
-                                <a href="">
-                                    <span>Warehousing</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="6">
-                                <a href="">
-                                    <span>Project Cargo</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
+                    </div>
+                    <div class="content">
+                        <p>Readable and Packages editors now use Lorem Ipsum as their default model textlayout. The
+                            point of using the some is that it has a more-or-less normal distribution of letters as
+                            opposed to using.</p>
                     </div>
                     <div class="video-area">
                         <div class="img">
-                            <img src="./assets/imgs/services-details-img3.jpg" alt="">
+                            <img src="./assets/imgs/services-details-img2.jpg" alt="">
                         </div>
                         <div class="content">
                             <a href="" class="video-btn">
@@ -223,6 +177,80 @@
                             </a>
                         </div>
                     </div>
+                    <div class="content-header">
+                        <div class="title">
+                            <h2>Result</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>Readable and Packages editors now use Lorem Ipsum as their default model textlayout. The
+                            point of using the some is that it has a more-or-less normal distribution of letters as
+                            opposed to using.</p>
+                    </div>
+                </div>
+                <div class="right">
+                        <img src="./assets/imgs/project-details-img2.jpg" alt="">
+                        <img src="./assets/imgs/about-v3-img1.jpg" alt="">
+                        <div class="info">
+                            <div class="title">
+                                <h2>Project info</h2>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="title-box">
+                                        <p>Client <span>:</span></p>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Rebecca Tylor</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="title-box">
+                                        <p>Category <span>:</span></p>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Ocean Transport</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="title-box">
+                                        <p>Location <span>:</span></p>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>New York to London</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="title-box">
+                                        <p>Date <span>:</span></p>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>12 November, 2023</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="title-box">
+                                        <p>Status <span>:</span></p>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Completed</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="title-box">
+                                        <p>Tags <span>:</span></p>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>Best Delivery</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                 </div>
             </div>
         </section>
@@ -359,6 +387,5 @@
 
 </body>
 <script src="./assets/js/common.js"></script>
-<script src="./assets/js/detail.js"></script>
 
 </html>

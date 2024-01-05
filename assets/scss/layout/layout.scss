@@ -45,6 +45,7 @@ header {
             ul {
                 @include displayFlex;
                 justify-content: space-between;
+
                 li {
                     margin-right: var(--fs-7);
 
@@ -100,8 +101,6 @@ header {
                 height: 1px;
             }
         }
-
-
     }
 
     .active {
@@ -124,6 +123,7 @@ header {
             padding: 30px 20px;
             @include displayFlex;
             justify-content: space-between;
+
             h2 a {
                 color: var(--onyx);
                 font-size: 1.875rem;
@@ -222,8 +222,6 @@ header {
     }
 }
 
-
-
 //footer
 footer {
     color: var(--prussian-blue);
@@ -267,6 +265,7 @@ footer {
 
         .footer-list {
             margin-top: var(--fs-10);
+
             .footer-list-title {
                 font-size: var(--fs-8);
                 border-block-end: 3px solid var(--dark-orange);
@@ -295,4 +294,3 @@ footer {
         }
     }
 }
-

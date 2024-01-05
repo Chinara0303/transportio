@@ -43,7 +43,7 @@ const services = [
         id: 3,
         name: "Ocean Freight",
         icon: "./assets/imgs/service-icon-2.png",
-        img: "./assets/imgs/ocean-freight.jpg",
+        img: "./assets/imgs/ocean_freight.jpg",
         description: ` <p>
         salam It is a long established fact that a reader will be distracted by the readable content of a
         page when looking at its layout. The point of using Lorem Ipsum is that it has a
@@ -117,6 +117,7 @@ const services = [
     },
 ]
 
+
 localStorage.setItem("services", JSON.stringify(services))
 
 let servicesDetail = JSON.parse(localStorage.getItem('services'))
@@ -133,3 +134,5 @@ btns.forEach(btn => {
         }
     })
 })
+
+
