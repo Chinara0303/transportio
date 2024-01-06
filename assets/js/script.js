@@ -1,4 +1,3 @@
-'use strict'
 
 const services = [
     {
@@ -129,10 +128,8 @@ btns.forEach(btn => {
     btn.addEventListener("click", function () {
         for (const service of servicesDetail) {
             if (btn.parentElement.getAttribute('id') == service.id) {
-                localStorage.setItem("clickedService",JSON.stringify(service))
+                localStorage.setItem("clickedService", JSON.stringify(service))
             }
         }
     })
 })
-
-

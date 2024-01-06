@@ -91,6 +91,21 @@ body {
   overflow-x: hidden;
 }
 
+header {
+  position: relative;
+}
+header .hero-shape-img {
+  position: absolute;
+}
+header .hero-shape-img-bottom {
+  right: 29px;
+  bottom: 30px;
+}
+header .hero-shape-img-top {
+  top: 88px;
+  left: 42px;
+}
+
 #contact-area {
   position: relative;
 }
@@ -106,7 +121,7 @@ body {
 }
 #contact-area .img-two {
   top: 316px;
-  right: 0;
+  right: 60px;
 }
 #contact-area .container .inner {
   position: relative;

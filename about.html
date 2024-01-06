@@ -16,6 +16,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- added slick -->
+    <link rel="stylesheet" href="./assets/scss/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/scss/slick-1.8.1/slick/slick.css">
+
+    <!-- added jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- added css -->
     <link rel="stylesheet" href="./assets/scss/common/common.css">
     <link rel="stylesheet" href="./assets/scss/layout/layout.css">
@@ -56,8 +66,6 @@
             <div class="burger-menu">
                 <img src="./assets/imgs/menu.png" alt="">
             </div>
-
-
         </div>
 
         <!-- start navbar -->
@@ -81,6 +89,7 @@
             </div>
         </div>
         <!-- end navbar -->
+        
         <!-- start breadcrumb section -->
         <section id="breadcrumb-area">
             <div class="container">
@@ -99,47 +108,383 @@
     <!-- end header -->
 
     <main>
-        <section>
+        <section id="why-us">
             <div class="container">
-                
+                <div class="headline">
+                    <h2 class="subtitle">We Are Professional Logistics & cargo Agency</h2>
+                </div>
+                <div class="inner">
+                    <div class="cards">
+                        <ul>
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-globe fa-2xl"></i>
+
+                                </div>
+                                <div class="text-box">
+                                    <p>Global Network</p>
+                                    <p>
+                                        Global Network
+                                        Freight Consolidators connects your business with international hubs across the
+                                        world such as the USA.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-headset fa-2xl"></i>
+                                </div>
+                                <div class="text-box">
+                                    <p>24-Hour Support</p>
+                                    <p>
+                                        24-Hour Support
+                                        Our dedicated team is on the job, tracking every step of your shipment we’re
+                                        available 24/7</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-handshake fa-2xl"></i>
+                                </div>
+                                <div class="text-box">
+                                    <p>Right Time Delivery</p>
+                                    <p>You place your order, and we’ll handle the rest. From pick-up to customs
+                                        clearance from tracking.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-box">
+                                    <i class="fa-solid fa-file-pen fa-2xl"></i>
+                                </div>
+                                <div class="text-box">
+                                    <p>Bespoke Solutions</p>
+                                    <p>We provide personalised intermodal solutions to all seaports and airports around
+                                        the world.</p>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="imgs">
+                        <img src="./assets/imgs/about-v3-img2.jpg" alt="">
+                        <img src="./assets/imgs/about-v3-img1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="headline">
+                    <h2 class="subtitle">We are Transportio</h2>
+                </div>
+                <div class="text">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab earum, voluptatibus et ex pariatur
+                        est a qui. Debitis odit sit, laborum, numquam dicta delectus maiores iste soluta beatae libero
+                        excepturi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam error esse libero reprehenderit
+                        saepe, iure sunt quae ea maiores, animi nam hic voluptatem nisi ut dolorum quis qui? Eveniet,
+                        corporis accusamus facilis quisquam autem officia totam minus laborum vero expedita quo nam,
+                        facere asperiores aperiam perferendis esse enim sunt suscipit quaerat natus cupiditate quis?
+                        Soluta, optio? Voluptatum, dignissimos ex exercitationem mollitia quod accusantium excepturi
+                        molestiae quidem quaerat inventore delectus in quisquam eum nesciunt eveniet commodi, minima
+                        necessitatibus. Dicta at vero, voluptatibus iusto nesciunt omnis? Dignissimos minus voluptas
+                        vero modi? Exercitationem atque ex laboriosam illo repellendus nihil dolorum maiores incidunt
+                        unde?</p>
+                </div>
             </div>
         </section>
+        <!-- video section -->
+        <section id="video-area">
+            <div class="content">
+                <a href="#" class="video-btn">
+                    <span>
+                        <i class="fa-solid fa-play fa-2xl"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+        <!-- video section -->
+
+        <!-- fact-counter section -->
         <section id="fact-counter">
             <div class="container">
                 <ul>
                     <li>
                         <p class="top">
-                            <span class="num">20</span>
+                            <span class="num" data-count="20">0</span>
                             <span class="plus">+</span>
                         </p>
                         <p class="text">Years of experience</p>
                     </li>
                     <li>
                         <p class="top">
-                            <span class="num">3000</span>
+                            <span class="num" data-count="3000">0</span>
                             <span class="plus">+</span>
                         </p>
                         <p class="text">Delivered Packages</p>
                     </li>
                     <li>
                         <p class="top">
-                            <span class="num">2300</span>
+                            <span class="num" data-count="2300">0</span>
                             <span class="plus">+</span>
                         </p>
                         <p class="text">Satisfied Clients</p>
                     </li>
                     <li>
                         <p class="top">
-                            <span class="num">10</span>
+                            <span class="num" data-count="10">0</span>
                             <span class="plus">+</span>
                         </p>
                         <p class="text">Projects</p>
                     </li>
                 </ul>
             </div>
+            <img class="shape" src="./assets/imgs/team-v3-shape2.png" alt="">
         </section>
+        <!-- fact-counter section -->
+
+        <!-- services section -->
+        <section id="service">
+            <div class="container">
+                <div class="headline">
+                    <h2 class="subtitle">Our Services</h2>
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <div class="card" id="1" style="background-image: url('./assets/imgs/air_freight.jpg');">
+                            <h3 class="card-title">
+                                <span>01</span>
+                                Air Freight
+                            </h3>
+                            <p class="card-text">
+                                Our aim is to optimize and improve your supply chain so that we can give you the
+                                best service.
+                            </p>
+                            <a href="service-detail.html" class="btn-link">
+                                <i class="fa-solid fa-chevron-right fa-sm"></i>
+                                <span class="span">View Detail</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card" id="2" style="background-image: url('./assets/imgs/road-freight.jpg');">
+                            <div class="card-icon">
+                                <img src="./assets/imgs/service-icon-1.png" alt="">
+                            </div>
+                            <h3 class="card-title">
+                                <span>02</span>
+                                Road Freight
+                            </h3>
+                            <p class="card-text">
+                                Our aim is to optimize and improve your supply chain so that we can give you the
+                                best service.
+                            </p>
+                            <a href="service-detail.html" class="btn-link">
+                                <i class="fa-solid fa-chevron-right fa-sm"></i>
+                                <span class="span">View Detail</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card" id="3" style="background-image: url('./assets/imgs/ocean_freight.jpg');">
+                            <div class="card-icon">
+                                <img src="./assets/imgs/service-icon-2.png" alt="">
+                            </div>
+                            <h3 class="card-title">
+                                <span>03</span>
+                                Ocean Freight
+                            </h3>
+                            <p class="card-text">
+                                Our aim is to optimize and improve your supply chain so that we can give you the
+                                best service.
+                            </p>
+                            <a href="service-detail.html" class="btn-link">
+                                <i class="fa-solid fa-chevron-right fa-sm"></i>
+                                <span class="span">View Detail</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card" id="4" style="background-image: url('./assets/imgs/rail_freight.jpg');">
+                            <div class="card-icon">
+                                <img src="./assets/imgs/service-icon-4.png" alt="">
+                            </div>
+                            <h3 class="card-title">
+                                <span>04</span>
+                                Rail Freight
+                            </h3>
+                            <p class="card-text">
+                                Our aim is to optimize and improve your supply chain so that we can give you the
+                                best service.
+                            </p>
+                            <a href="service-detail.html" class="btn-link">
+                                <i class="fa-solid fa-chevron-right fa-sm"></i>
+                                <span class="span">View Detail</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card" id="5" style="background-image: url('./assets/imgs/warehousing.jpg');">
+                            <div class="card-icon">
+                                <img src="./assets/imgs/service-icon-5.png" alt="">
+                            </div>
+                            <h3 class="card-title">
+                                <span>05</span>
+                                Warehousing
+                            </h3>
+                            <p class="card-text">
+                                Our aim is to optimize and improve your supply chain so that we can give you the
+                                best service.
+                            </p>
+                            <a href="service-detail.html" class="btn-link">
+                                <i class="fa-solid fa-chevron-right fa-sm"></i>
+                                <span class="span">View Detail</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card" id="6" style="background-image: url('./assets/imgs/project_cargo.jpg');">
+                            <div class="card-icon">
+                                <img src="./assets/imgs/service-icon-6.png" alt="">
+                            </div>
+                            <h3 class="card-title">
+                                <span>06</span>
+                                Project cargo
+                            </h3>
+                            <p class="card-text">
+                                Our aim is to optimize and improve your supply chain so that we can give you the
+                                best service.
+                            </p>
+                            <a href="service-detail.html" class="btn-link">
+                                <i class="fa-solid fa-chevron-right fa-sm"></i>
+                                <span class="span">View Detail</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <!-- services section -->
+
+        <!-- projects section -->
+        <section id="projects">
+            <div class="container">
+                <div class="headline">
+                    <h2 class="subtitle">Our Projects</h2>
+
+                </div>
+                <ul class="projects">
+                    <li>
+                        <div class="projects-card">
+                            <div class="card-img">
+                                <img src="./assets/imgs/project-1.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="project-detail.html" class="more-btn">
+                                    <i class="fa-solid fa-circle-plus fa-xl"></i>
+                                </a>
+                                <div class="text">
+                                    <p>Warehousing, Distrbution</p>
+                                    <h3>Warehouse inventory</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="projects-card">
+                            <div class="card-img">
+                                <img src="./assets/imgs/project-2.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="project-detail.html" class="more-btn">
+                                    <i class="fa-solid fa-circle-plus fa-xl"></i>
+                                </a>
+                                <div class="text">
+                                    <p>Warehousing, Distrbution</p>
+                                    <h3>Warehouse inventory</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="projects-card">
+                            <div class="card-img">
+                                <img src="./assets/imgs/project-3.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="project-detail.html" class="more-btn">
+                                    <i class="fa-solid fa-circle-plus fa-xl"></i>
+                                </a>
+                                <div class="text">
+                                    <p>Warehousing, Distrbution</p>
+                                    <h3>Warehouse inventory</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="projects-card">
+                            <div class="card-img">
+                                <img src="./assets/imgs/project-4.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="project-detail.html" class="more-btn">
+                                    <i class="fa-solid fa-circle-plus fa-xl"></i>
+                                </a>
+                                <div class="text">
+                                    <p>Warehousing, Distrbution</p>
+                                    <h3>Warehouse inventory</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="projects-card">
+                            <div class="card-img">
+                                <img src="./assets/imgs/project-5.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="project-detail.html" class="more-btn">
+                                    <i class="fa-solid fa-circle-plus fa-xl"></i>
+                                </a>
+                                <div class="text">
+                                    <p>Warehousing, Distrbution</p>
+                                    <h3>Warehouse inventory</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="projects-card">
+                            <div class="card-img">
+                                <img src="./assets/imgs/project-4.jpg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <a href="project-detail.html" class="more-btn">
+                                    <i class="fa-solid fa-circle-plus fa-xl"></i>
+                                </a>
+                                <div class="text">
+                                    <p>Warehousing, Distrbution</p>
+                                    <h3>Warehouse inventory</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- projects section -->
+
+        <!-- back to top button -->
+        <a href="#top" class="back-top-btn">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+
     </main>
 </body>
 <script src="./assets/js/common.js"></script>
+<script src="./assets/js/counter.js"></script>
+<script src="./assets/js/detail.js"></script>
+<script src="./assets/js/slick.js"></script>
+<!-- added slick -->
+<script src="./assets/scss/slick-1.8.1/slick/slick.min.js"></script>
+<script src="./assets/scss/slick-1.8.1/slick/slick.js"></script>
 
 </html>

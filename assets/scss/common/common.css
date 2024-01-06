@@ -175,4 +175,33 @@ h2, h3 {
 
 .btn:is(:hover, :focus)::after {
   width: 40px;
+}
+
+.headline {
+  text-align: center;
+}
+.headline .title {
+  color: var(--dark-orange);
+  text-transform: uppercase;
+  font-size: var(--fs-6);
+  font-family: var(--ff-oswald);
+  font-weight: var(--fw-600);
+  letter-spacing: 3px;
+  -webkit-margin-after: 10px;
+          margin-block-end: 10px;
+}
+.headline .subtitle {
+  color: var(--prussian-blue);
+  font-size: 2.813rem;
+  font-family: var(--ff-oswald);
+  font-weight: 600;
+  margin-block: 20px;
+}
+.headline .text {
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: var(--ff-rubik);
+  color: var(--onyx);
+  width: 56%;
+  margin: 0 auto 50px auto !important;
 }/*# sourceMappingURL=common.css.map */

@@ -668,10 +668,8 @@ main #projects ul .projects-card:hover .expand-btn {
 main #blog {
   padding-block: var(--section-padding);
 }
-main #blog ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+main #blog .slick-initialized .slick-slide {
+  margin-left: 15px;
 }
 main #blog ul .card-img img {
   width: 100%;
@@ -711,10 +709,6 @@ main #blog ul .card-content h3 a {
 main #blog ul .card-content .card-text {
   color: var(--onyx);
   margin-block: 15px !important;
-}
-main #blog .show-more {
-  margin-top: 60px;
-  text-align: center;
 }
 main #newsletter {
   padding-block: var(--section-padding);
@@ -768,35 +762,6 @@ main #newsletter .newsletter-area .newsletter-content form button {
   font-family: var(--ff-oswald);
   padding: 15px 30px;
   color: var(--white);
-}
-
-.headline {
-  text-align: center;
-}
-.headline .title {
-  color: var(--dark-orange);
-  text-transform: uppercase;
-  font-size: var(--fs-6);
-  font-family: var(--ff-oswald);
-  font-weight: var(--fw-600);
-  letter-spacing: 3px;
-  -webkit-margin-after: 10px;
-          margin-block-end: 10px;
-}
-.headline .subtitle {
-  color: var(--prussian-blue);
-  font-size: 2.813rem;
-  font-family: var(--ff-oswald);
-  font-weight: 600;
-  margin-block: 20px;
-}
-.headline .text {
-  line-height: 1.4;
-  font-size: 16px;
-  font-family: var(--ff-rubik);
-  color: var(--onyx);
-  width: 56%;
-  margin: 0 auto 50px auto !important;
 }
 
 .btn-link {

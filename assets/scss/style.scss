@@ -408,12 +408,11 @@ main {
 
     #blog {
         padding-block: var(--section-padding);
-
+        .slick-initialized .slick-slide {
+            margin-left: 15px;
+        }
         ul {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-
+           
             .card-img {
                 img {
                     width: 100%;
@@ -460,11 +459,6 @@ main {
                     margin-block: 15px !important;
                 }
             }
-        }
-
-        .show-more {
-            margin-top: 60px;
-            text-align: center;
         }
     }
 
@@ -532,37 +526,6 @@ main {
     }
 }
 
-//headline
-.headline {
-    text-align: center;
-
-    .title {
-        color: var(--dark-orange);
-        text-transform: uppercase;
-        font-size: var(--fs-6);
-        font-family: var(--ff-oswald);
-        font-weight: var(--fw-600);
-        letter-spacing: 3px;
-        margin-block-end: 10px;
-    }
-
-    .subtitle {
-        color: var(--prussian-blue);
-        font-size: 2.813rem;
-        font-family: var(--ff-oswald);
-        font-weight: 600;
-        margin-block: 20px;
-    }
-
-    .text {
-        line-height: 1.4;
-        font-size: 16px;
-        font-family: var(--ff-rubik);
-        color: var(--onyx);
-        width: 56%;
-        margin: 0 auto 50px auto !important;
-    }
-}
 
 //btn
 .btn-link {

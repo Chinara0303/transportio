@@ -2,10 +2,27 @@
 @import '../partials/mixin';
 
 
-body{
+body {
     overflow-x: hidden;
 }
 
+header {
+    position: relative;
+
+    .hero-shape-img {
+        position: absolute;
+    }
+
+    .hero-shape-img-bottom {
+        right: 29px;
+        bottom: 30px;
+    }
+
+    .hero-shape-img-top {
+        top: 88px;
+        left: 42px;
+    }
+}
 
 #contact-area {
     position: relative;
@@ -24,7 +41,7 @@ body{
 
     .img-two {
         top: 316px;
-        right: 0;
+        right: 60px;
     }
 
     .container {
@@ -155,13 +172,15 @@ body{
     .map {
         position: absolute;
         top: 125%;
-        iframe{
+
+        iframe {
             width: 100vw;
         }
     }
 
 }
-footer{
+
+footer {
     position: relative;
     top: 556px;
 }
@@ -180,5 +199,3 @@ footer{
 
     animation: move 2s ease-in-out infinite alternate;
 }
-
-
