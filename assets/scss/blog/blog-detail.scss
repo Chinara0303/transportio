@@ -61,13 +61,14 @@
                         @include displayFlex;
                         margin-left: 50px;
                         justify-content: space-between;
+                        flex-wrap: wrap;
 
                         li {
                             border-radius: 15px;
                             background-color: var(--cultured-3);
                             text-transform: capitalize;
                             padding: 5px 15px 5px !important;
-                            margin-right: 10px;
+                            margin: 10px;
                             transition: var(--transition);
 
                             a {
@@ -266,6 +267,15 @@
                     }
                 }
             }
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    #blog {
+        ul {
+            grid-template-columns: initial !important;
         }
     }
 }

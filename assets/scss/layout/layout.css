@@ -368,7 +368,7 @@ h2, h3 {
 }
 
 header {
-  min-height: 100vh;
+  min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -388,6 +388,20 @@ header .header-container {
   padding: 15px;
   transition: var(--transition);
   z-index: 4;
+}
+
+header .hero-shape-img {
+  position: absolute;
+}
+
+header .hero-shape-img-bottom {
+  right: 29px;
+  bottom: 30px;
+}
+
+header .hero-shape-img-top {
+  top: 88px;
+  left: 42px;
 }
 header .header-container .logo {
   font-family: var(--ff-oswald);
@@ -422,9 +436,10 @@ header .header-container .header-content .header-contact :first-child {
   text-transform: uppercase;
   text-align: end;
 }
-header .header-container .header-content .header-contact :last-child {
+header .header-container .header-content .header-contact a {
   font-size: var(--fs-7);
   font-weight: 600;
+  color: var(--white);
 }
 header .header-container .header-content .header-contact-icon {
   margin-left: 1.25rem;
@@ -519,17 +534,7 @@ header #hero .container .hero-content a:hover {
   background-color: var(--dark-orange);
   border: 1px solid var(--dark-orange);
 }
-header #hero .container .hero-content .hero-shape-img {
-  position: absolute;
-}
-header #hero .container .hero-content .hero-shape-img-bottom {
-  right: 29px;
-  bottom: 30px;
-}
-header #hero .container .hero-content .hero-shape-img-top {
-  top: 88px;
-  left: 42px;
-}
+
 
 footer {
   color: var(--prussian-blue);

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportio - To every direction</title>
+    <!-- added font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- added google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- added css -->
+    <link rel="stylesheet" href="./assets/scss/common/common.css">
+    <link rel="stylesheet" href="./assets/scss/layout/layout.css">
+    <link rel="stylesheet" href="./assets/scss/track/track.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <!-- start header -->
+    <header style="background-image: url('./assets/imgs/hero-banner.jpg');">
+        <div class="header-container">
+            <h1>
+                <a class="logo" href="#">
+                    Transportio
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#service">Service</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-content">
+                <div class="header-contact">
+                    <p>Free Call In U.S.A</p>
+                    <a href="tel:123456789">+123 556 8824</a>
+                </div>
+                <div class="header-contact-icon">
+                    <i class="fa-solid fa-phone fa-lg"></i>
+                </div>
+            </div>
+
+            <div class="burger-menu">
+                <img src="./assets/imgs/menu.png" alt="">
+            </div>
+
+
+        </div>
+
+        <!-- start navbar -->
+        <div class="navbar">
+            <div class="top">
+                <h2>
+                    <a class="logo" href="#">Transportio</a>
+                </h2>
+                <button class="close-button">
+                    <i class="fa-solid fa-xmark fa-xl" style="color: #000;"></i>
+                </button>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#service">Service</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end navbar -->
+
+        <!-- start breadcrumb section -->
+        <section id="breadcrumb-area">
+            <div class="container">
+                <h1 class="name">Track & Trace</h1>
+                <span>
+                    <a href="index.html">Home </a>
+                    <i class="fa-solid fa-arrow-right fa-sm"></i>
+                    <a class="name" href="index.html#feature">Estimation</a>
+                    <i class="fa-solid fa-arrow-right fa-sm"></i>
+                    <a class="name" href="tracking.html">Track & Trace</a>
+                </span>
+
+            </div>
+        </section>
+        <!-- end breadcrumb section -->
+        <img class="hero-shape-img hero-shape-img-top" src="./assets/imgs/hero-shape.png" alt="">
+        <img class="hero-shape-img hero-shape-img-bottom" src="./assets/imgs/hero-shape.png" alt="">
+
+    </header>
+    <!-- end header -->
+
+    <main>
+        <section id="tracking">
+            <div class="tracking-bg" style="background-image: url('./assets/imgs/track&trace.jpg');">
+                <div class="container">
+                    <div class="headline">
+                        <h2 class="subtitle">Where is my shipment?</h2>
+                    </div>
+                    <div class="tracking-inner">
+                         <div class="tracking-area">
+                        <p class="info">Get instant information about your shipment. No need to await user ID or
+                            password. Just insert your tracking ID in below formula to view the latest updates on your
+                            shipment – fast, easy, and convenient.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Please, enter tracking ID">
+                            <button type="submit">
+                                <i class="fa-solid fa-magnifying-glass-location fa-2xl"></i>
+                            </button>
+                        </form>
+                        <div class="error-notification box">
+                            <p>No results found for this ID. Please recheck that the ID is complete and correct and in
+                                the number format.</p>
+                        </div>
+                        <div class="success-notification box">
+                            <p class="tracking-id">23456789</p>
+                            <div class="routing">
+                                <div class="start"></div>
+                                <div class="tracking-dots"></div>
+                                <div class="end"></div>
+                            </div>
+                            <div class="inner">
+                                <div class="from-where">
+                                    <p>Germany</p>
+                                </div>
+                                <div class="to-where">
+                                    <p>Baku</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193939.79730528416!2d49.466268587066104!3d40.57892697198878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403096dcd0923f6b%3A0xdf4767c369322a71!2sSumqayit!5e0!3m2!1sen!2saz!4v1704735442004!5m2!1sen!2saz" 
+                        width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </section>
+           <!-- start newsletter section -->
+           <section id="newsletter">
+            <div class="newsletter-area">
+                <div class="container">
+                    <div class="img">
+                        <img src="./assets/imgs/newsletter-banner.png" alt="">
+                    </div>
+                    <div class="newsletter-content">
+                        <h2 class="title">Subscribe for offers and news</h2>
+                        <form action="#">
+                            <input type="email" name="email_address" placeholder="Enter Your Email">
+                            <button type="submit">Subscribe Now</button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- end newsletter section -->
+
+    </main>
+
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <a href="#" class="logo">Transportio</a>
+                        <p class="footer-text">
+                            Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
+                        </p>
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="#" class="social-link">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+    
+                        </ul>
+    
+                    </div>
+    
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Quick Links</p>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#service">Services</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li class="footer-link">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+    
+                    </ul>
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title">Services</p>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#">Warehouse</a>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#" class="footer-link">Air Freight</a>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#">Ocean Freight</a>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#">Road Freight</a>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#">Packaging</a>
+                        </li>
+    
+                    </ul>
+                    <ul class="footer-list">
+    
+                        <li>
+                            <p class="footer-list-title">Community</p>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#">Business Consulting</a>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#">Testimonials</a>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#">Track Your Shipment</a>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+    
+                        <li class="footer-link">
+                            <a href="#">Terms & Condition</a>
+                        </li>
+    
+                    </ul>
+                </div>
+    
+                <div class="footer-bottom">
+                    <p class="copyright">
+                        &copy; 2022 Transportio. All Rights Reserved by <a href="#" class="copyright-link">John Doe</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    
+        <!-- back to top button -->
+        <a href="#top" class="back-top-btn">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+</body>
+<script src="./assets/js/common.js"></script>
+
+</html>

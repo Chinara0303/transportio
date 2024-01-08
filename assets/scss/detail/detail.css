@@ -84,6 +84,7 @@ h2, h3 {
   --shadow-1: 2px 0 50px hsla(0, 0%, 0%, 0.2);
   --shadow-2: 0px 40px 60px hsla(202, 75%, 47%, 0.7);
   --shadow-3: 0px 0px 60px hsla(202, 75%, 47%, 0.5);
+  --shadow-4: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --section-padding: 7.5rem;
 }
 
@@ -134,6 +135,7 @@ h2, h3 {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 #detail .container .left .benefit-services .benefit-service {
   width: 30%;
@@ -350,5 +352,55 @@ h2, h3 {
     position: initial !important;
     width: 100% !important;
     margin-top: var(--fs-4);
+  }
+  .benefit-services .benefit-service {
+    width: 100% !important;
+  }
+  .feedback {
+    padding: 0 !important;
+  }
+  .comments-area .comment-box .top {
+    display: initial !important;
+  }
+  .comments-area .comment-box .top .date {
+    margin-top: 10px;
+  }
+  .comments-area .comment-box .top .date p {
+    font-size: 14px !important;
+  }
+  .tags ul li {
+    margin: 10px 0 !important;
+  }
+  .meta-box {
+    flex-wrap: wrap;
+  }
+  .meta-box li {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1180px) {
+  .comments-area .comment-box .top {
+    display: initial !important;
+  }
+  .comments-area .comment-box .top .date {
+    margin-top: 10px;
+  }
+  .comments-area .comment-box .top .date p {
+    font-size: 14px !important;
+  }
+  .tags ul li {
+    margin: 10px 0 !important;
+  }
+  .meta-box {
+    flex-wrap: wrap;
+  }
+  .meta-box li {
+    width: 50%;
+  }
+  .feedback {
+    padding: 0 !important;
+  }
+  .project-challenge .challenge {
+    width: 100% !important;
   }
 }/*# sourceMappingURL=detail.css.map */

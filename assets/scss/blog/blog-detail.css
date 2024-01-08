@@ -84,6 +84,7 @@ h2, h3 {
   --shadow-1: 2px 0 50px hsla(0, 0%, 0%, 0.2);
   --shadow-2: 0px 40px 60px hsla(202, 75%, 47%, 0.7);
   --shadow-3: 0px 0px 60px hsla(202, 75%, 47%, 0.5);
+  --shadow-4: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --section-padding: 7.5rem;
 }
 
@@ -144,13 +145,14 @@ h2, h3 {
   align-items: center;
   margin-left: 50px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .blog-detail .container .left .content .tags ul li {
   border-radius: 15px;
   background-color: var(--cultured-3);
   text-transform: capitalize;
   padding: 5px 15px 5px !important;
-  margin-right: 10px;
+  margin: 10px;
   transition: var(--transition);
 }
 .blog-detail .container .left .content .tags ul li a {
@@ -299,4 +301,10 @@ h2, h3 {
 }
 .blog-detail .container .right .tags ul li:hover a {
   background: var(--dark-orange);
+}
+
+@media (max-width: 576px) {
+  #blog ul {
+    grid-template-columns: initial !important;
+  }
 }/*# sourceMappingURL=blog-detail.css.map */

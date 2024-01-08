@@ -1,5 +1,4 @@
 @import '_reset.scss';
-@import '_responsive.scss';
 @import './partials/mixin';
 
 .overlay {
@@ -59,6 +58,7 @@ main {
                 padding: 10px;
                 font-family: var(--ff-oswald);
                 color: var(--white) !important;
+
                 .history {
                     writing-mode: vertical-rl;
                     text-align: end;
@@ -408,11 +408,13 @@ main {
 
     #blog {
         padding-block: var(--section-padding);
+
         .slick-initialized .slick-slide {
             margin-left: 15px;
         }
+
         ul {
-           
+
             .card-img {
                 img {
                     width: 100%;
@@ -462,68 +464,7 @@ main {
         }
     }
 
-    #newsletter {
-        padding-block: var(--section-padding);
 
-        .newsletter-area {
-            background-color: var(--dark-orange);
-            height: 223px;
-            position: relative;
-
-            .img {
-                position: relative;
-                top: -161px;
-                left: 0;
-                width: 26%;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-
-            .newsletter-content {
-                position: absolute;
-                top: 26%;
-                left: 34%;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-
-                .title {
-                    font-size: 3rem;
-                    color: var(--prussian-blue);
-                    font-family: var(--ff-oswald);
-                    line-height: 1.2;
-                    font-weight: var(--fw-600);
-                }
-
-                form {
-                    input {
-                        background-color: var(--white);
-                        color: var(--eerie-black);
-                        font-size: var(--fs-10);
-                        height: 60px;
-                        padding-inline: 20px;
-                        margin-block-end: 10px;
-                        outline: none;
-                        border: none;
-                        transition: var(--transition);
-                        width: 80%;
-                    }
-
-                    button {
-                        background-color: var(--prussian-blue);
-                        font-size: 20px;
-                        font-weight: 600;
-                        font-family: var(--ff-oswald);
-                        padding: 15px 30px;
-                        color: var(--white);
-                    }
-                }
-            }
-
-        }
-    }
 }
 
 
@@ -551,21 +492,98 @@ main {
     }
 }
 
+@media (max-width:576px) {
 
-//animate
-.branch-count,
-.line,
-.hero-shape-img,
-.feature-head img {
-    @keyframes move {
-        0% {
-            transform: translateY(0);
+    // feature
+    #feature {
+        .feature-head {
+            img {
+                display: none !important;
+            }
+
+            .btn {
+                font-size: var(--fs-11) !important;
+
+            }
         }
 
-        100% {
-            transform: translateY(20px);
+
+        ul {
+            grid-template-columns: repeat(1, 1fr) !important;
+
+            .feature-card {
+                .card-number {
+                    top: 0px !important;
+                    left: 36% !important;
+                    font-size: 4rem !important;
+                }
+            }
+        }
+
+    }
+
+    // service
+    #service ul {
+        grid-template-columns: repeat(1, 1fr) !important;
+
+    }
+
+}
+
+@media (max-width:1180px) and(min-width:768px) {
+    #service ul {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    
+    #feature {
+        ul {
+            grid-template-columns: repeat(2, 1fr) !important;
+            .feature-card {
+                .card-number {
+                    top: 0 !important;
+                    left: 36% !important;
+                    font-size: 6rem !important;
+                }
+            }
         }
     }
 
-    animation: move 2s ease-in-out infinite alternate;
+    #blog {
+        ul {
+            .card-time {
+                font-size: var(--fs-8) !important;
+
+                :first-child {
+                    font-size: var(--fs-5) !important;
+                }
+            }
+        }
+    }
+
+
+
 }
+
+@media (min-width:1024px)and(max-width:1366px) {
+
+
+    #feature {
+        ul {
+            margin-block-start: 15% !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+
+            .feature-card {
+                .card-number {
+                    top: -116px !important;
+                    left: 5% !important;
+                    font-size: 12rem !important;
+                }
+            }
+        }
+    }
+
+  
+}
+
+

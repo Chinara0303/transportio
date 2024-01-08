@@ -84,6 +84,7 @@ h2, h3 {
   --shadow-1: 2px 0 50px hsla(0, 0%, 0%, 0.2);
   --shadow-2: 0px 40px 60px hsla(202, 75%, 47%, 0.7);
   --shadow-3: 0px 0px 60px hsla(202, 75%, 47%, 0.5);
+  --shadow-4: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --section-padding: 7.5rem;
 }
 
@@ -100,12 +101,12 @@ h2, h3 {
   border-radius: 4px;
   transition: var(--transition);
 }
-#why-us .inner .imgs :last-child {
+#why-us .inner .imgs .rotate-img {
   position: absolute;
   transform: rotate(10deg);
   z-index: -2;
   left: 64%;
-  top: 140%;
+  top: 129%;
 }
 #why-us .cards {
   width: 50%;
@@ -245,12 +246,13 @@ h2, h3 {
   top: 0%;
   left: -40%;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.3;
 }
 #fact-counter ul {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 #fact-counter ul li {
   width: 23%;
@@ -389,9 +391,15 @@ h2, h3 {
   position: relative;
   border-bottom: 3px solid var(--dark-orange);
 }
+#projects ul .projects-card .card-img {
+  overflow: hidden;
+  border-radius: 4px;
+}
 #projects ul .projects-card .card-img img {
   width: 100%;
   border-radius: 4px;
+  transition: var(--transition);
+  transform: scale(1.05);
 }
 #projects ul .projects-card .card-content {
   position: relative;
@@ -419,4 +427,58 @@ h2, h3 {
 }
 #projects ul .projects-card .card-content .more-btn:hover i {
   color: var(--dark-orange);
+}
+#projects ul .projects-card::before {
+  background: rgba(255, 255, 255, 0.3);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0;
+  opacity: 1;
+  z-index: 9;
+  pointer-events: none;
+}
+#projects ul .projects-card:hover::before {
+  height: 100%;
+  opacity: 0;
+  transition: all 400ms linear;
+}
+#projects ul .projects-card:hover .card-img img {
+  transform: scale(1);
+}
+
+@media (max-width: 576px) {
+  #why-us .inner {
+    display: inherit !important;
+  }
+  #why-us .inner .cards {
+    width: 100% !important;
+  }
+  #why-us .inner .cards ul li {
+    width: 100% !important;
+  }
+  #why-us .inner .cards ul li .icon-box i {
+    color: var(--dark-orange) !important;
+  }
+  #why-us .inner .imgs {
+    display: none;
+  }
+  #fact-counter {
+    top: 0 !important;
+  }
+  #fact-counter ul li {
+    width: 47%;
+    height: 175px;
+    padding: 20px 3px !important;
+  }
+  #fact-counter .shape {
+    top: -10% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1180px) {
+  #why-us .imgs .rotate-img {
+    display: none !important;
+  }
 }/*# sourceMappingURL=about.css.map */

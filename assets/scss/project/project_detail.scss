@@ -7,7 +7,7 @@
         .project-challenge {
             @include displayFlex;
             gap: 20px;
-
+            flex-wrap: wrap;
             .challenge {
                 width: 30%;
                 background-color: var(--cultured-3);

@@ -58,6 +58,7 @@
             .benefit-services {
                 @include displayFlex;
                 gap: 20px;
+                flex-wrap: wrap;
 
                 .benefit-service {
                     width: 30%;
@@ -313,6 +314,78 @@
                 width: 100% !important;
                 margin-top: var(--fs-4);
             }
+        }
+    }
+
+    .benefit-services {
+        .benefit-service {
+            width: 100% !important;
+        }
+    }
+    .feedback{
+        padding: 0!important;
+    }
+    .comments-area{
+        .comment-box{
+            .top{
+                display: initial !important;
+                .date{
+                    margin-top: 10px;
+                    p{
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+    .tags{
+        ul{
+            li{
+                margin: 10px 0 !important;
+            }
+        }
+    }
+    .meta-box{
+            flex-wrap: wrap;
+        li{
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width:768px)and(max-width:1180px) {
+    .comments-area{
+        .comment-box{
+            .top{
+                display: initial !important;
+                .date{
+                    margin-top: 10px;
+                    p{
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+    .tags{
+        ul{
+            li{
+                margin: 10px 0 !important;
+            }
+        }
+    }
+    .meta-box{
+            flex-wrap: wrap;
+        li{
+            width: 50%;
+        }
+    }
+    .feedback{
+        padding: 0!important;
+    }
+    .project-challenge {
+        .challenge {
+            width: 100% !important;
         }
     }
 }
