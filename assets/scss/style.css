@@ -100,6 +100,10 @@ h2, h3 {
   visibility: hidden;
 }
 
+body {
+  height: 3000px;
+}
+
 main #about {
   padding-block: var(--section-padding);
 }

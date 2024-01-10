@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- added aos -->
+    <link rel="stylesheet" href="./assets/aos/aos-master/dist/aos.css">
+    <!-- added css -->
     <link rel="stylesheet" href="./assets/scss/common/common.css">
     <link rel="stylesheet" href="./assets/scss/layout/layout.css">
     <link rel="stylesheet" href="./assets/scss/detail/detail.css">
@@ -21,7 +24,7 @@
 
     <!-- start header -->
     <header style="background-image: url('./assets/imgs/hero-banner.jpg');">
-        <div class="header-container">
+        <div class="header-container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
             <h1>
                 <a class="logo" href="index.html">
                     Transportio
@@ -76,7 +79,7 @@
 
         <!-- start breadcrumb section -->
         <section id="breadcrumb-area">
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                 <h1 class="project-name">Warehouse inventory</h1>
                 <span>
                     <span>
@@ -97,7 +100,7 @@
     <main>
         <section id="detail" class="project-detail">
             <div class="container">
-                <div class="left">
+                <div class="left" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                     <div class="img">
                         <img src="./assets/imgs/project-details-img1.jpg" alt="">
                     </div>
@@ -190,197 +193,195 @@
                             opposed to using.</p>
                     </div>
                 </div>
-                <div class="right">
-                        <img src="./assets/imgs/project-details-img2.jpg" alt="">
-                        <img src="./assets/imgs/about-v3-img1.jpg" alt="">
-                        <div class="info">
-                            <div class="title">
-                                <h2>Project info</h2>
-                            </div>
-                            <ul>
-                                <li>
-                                    <div class="title-box">
-                                        <p>Client <span>:</span></p>
-                                    </div>
-                                    <div class="text-box">
-                                        <p>Rebecca Tylor</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="title-box">
-                                        <p>Category <span>:</span></p>
-                                    </div>
-                                    <div class="text-box">
-                                        <p>Ocean Transport</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="title-box">
-                                        <p>Location <span>:</span></p>
-                                    </div>
-                                    <div class="text-box">
-                                        <p>New York to London</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="title-box">
-                                        <p>Date <span>:</span></p>
-                                    </div>
-                                    <div class="text-box">
-                                        <p>12 November, 2023</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="title-box">
-                                        <p>Status <span>:</span></p>
-                                    </div>
-                                    <div class="text-box">
-                                        <p>Completed</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="title-box">
-                                        <p>Tags <span>:</span></p>
-                                    </div>
-                                    <div class="text-box">
-                                        <p>Best Delivery</p>
-                                    </div>
-                                </li>
-                            </ul>
+                <div class="right" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <img src="./assets/imgs/project-details-img2.jpg" alt="">
+                    <img src="./assets/imgs/about-v3-img1.jpg" alt="">
+                    <div class="info">
+                        <div class="title">
+                            <h2>Project info</h2>
                         </div>
+                        <ul>
+                            <li>
+                                <div class="title-box">
+                                    <p>Client <span>:</span></p>
+                                </div>
+                                <div class="text-box">
+                                    <p>Rebecca Tylor</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="title-box">
+                                    <p>Category <span>:</span></p>
+                                </div>
+                                <div class="text-box">
+                                    <p>Ocean Transport</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="title-box">
+                                    <p>Location <span>:</span></p>
+                                </div>
+                                <div class="text-box">
+                                    <p>New York to London</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="title-box">
+                                    <p>Date <span>:</span></p>
+                                </div>
+                                <div class="text-box">
+                                    <p>12 November, 2023</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="title-box">
+                                    <p>Status <span>:</span></p>
+                                </div>
+                                <div class="text-box">
+                                    <p>Completed</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="title-box">
+                                    <p>Tags <span>:</span></p>
+                                </div>
+                                <div class="text-box">
+                                    <p>Best Delivery</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- start footer -->
-    <footer class="footer">
-        <div class="container">
-
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <a href="#" class="logo">Transportio</a>
-                    <p class="footer-text">
-                        Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
-                    </p>
-                    <ul class="social-list">
-                        <li>
-                            <a href="#" class="social-link">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#" class="social-link">
-                                <i class="fa-brands fa-youtube"></i>
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <ul class="footer-list">
-                    <li>
-                        <p class="footer-list-title">Quick Links</p>
-                    </li>
-                    <li class="footer-link">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="#service">Services</a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="#blog">Blog</a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="faq.html">FAQ</a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="#">Contact Us</a>
-                    </li>
-
-                </ul>
-                <ul class="footer-list">
-                    <li>
-                        <p class="footer-list-title">Services</p>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#">Warehouse</a>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#" class="footer-link">Air Freight</a>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#">Ocean Freight</a>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#">Road Freight</a>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#">Packaging</a>
-                    </li>
-
-                </ul>
-                <ul class="footer-list">
-
-                    <li>
-                        <p class="footer-list-title">Community</p>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#">Business Consulting</a>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#">Testimonials</a>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#">Track Your Shipment</a>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#">Privacy Policy</a>
-                    </li>
-
-                    <li class="footer-link">
-                        <a href="#">Terms & Condition</a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="copyright">
-                    &copy; 2022 Transportio. All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>
+   <!-- start footer -->
+ <footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Transportio</a>
+                <p class="footer-text">
+                    Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
                 </p>
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
             </div>
+
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">Quick Links</p>
+                </li>
+                <li class="footer-link">
+                    <a href="index.html#about">About</a>
+                </li>
+                <li class="footer-link">
+                    <a href="index.html#service">Services</a>
+                </li>
+                <li class="footer-link">
+                    <a href="index.html#blog">Blog</a>
+                </li>
+                <li class="footer-link">
+                    <a href="faq.html">FAQ</a>
+                </li>
+                <li class="footer-link">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">Services</p>
+                </li>
+
+                <li class="footer-link" id="5">
+                    <a href="service-detail.html">Warehouse</a>
+                </li>
+
+                <li class="footer-link" id="1">
+                    <a href="service-detail.html" class="footer-link">Air Freight</a>
+                </li>
+
+                <li class="footer-link" id="3">
+                    <a href="service-detail.html">Ocean Freight</a>
+                </li>
+
+                <li class="footer-link" id="2">
+                    <a href="service-detail.html">Road Freight</a>
+                </li>
+
+                <li class="footer-link" id="4">
+                    <a href="service-detail.html">Rail Freight</a>
+                </li>
+
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <p class="footer-list-title">Community</p>
+                </li>
+
+                <li class="footer-link">
+                    <a href="contact.html">Business Consulting</a>
+                </li>
+
+                <li class="footer-link">
+                    <a href="index.html#feature">Estimation</a>
+                </li>
+
+                <li class="footer-link">
+                    <a href="tracking.html">Track Your Shipment</a>
+                </li>
+
+                <li class="footer-link">
+                    <a href="#">Privacy Policy</a>
+                </li>
+
+                <li class="footer-link">
+                    <a href="#">Terms & Condition</a>
+                </li>
+
+            </ul>
         </div>
-    </footer>
-    <!-- end footer -->
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2022 Transportio. All Rights Reserved by <a href="#" class="copyright-link">John Doe</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
 
     <!-- back to top button -->
     <a href="#top" class="back-top-btn">
@@ -389,5 +390,10 @@
 
 </body>
 <script src="./assets/js/common.js"></script>
+<!-- added aos -->
+<script src="./assets/aos/aos-master/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

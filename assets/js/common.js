@@ -1,5 +1,6 @@
 'use strict'
 
+
 let openBtn = document.querySelector(".burger-menu img");
 let menu = document.querySelector('.navbar');
 let closeBtn = document.querySelector('.close-button');
@@ -48,3 +49,5 @@ window.addEventListener("scroll", function () {
         backToTopBtn.classList.remove("active")
     }
 })
+
+

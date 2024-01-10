@@ -18,8 +18,11 @@
         rel="stylesheet">
 
     <!-- added slick -->
-    <link rel="stylesheet" href="./assets/scss/slick-1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="./assets/scss/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./assets/slick/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/slick/slick-1.8.1/slick/slick.css">
+
+    <!-- added aos -->
+    <link rel="stylesheet" href="./assets/aos/aos-master/dist/aos.css">
 
     <!-- added jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -37,7 +40,7 @@
 
     <!-- start header -->
     <header style="background-image: url('./assets/imgs/hero-banner.jpg');">
-        <div class="header-container">
+        <div class="header-container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
             <h1>
                 <a class="logo" href="#">
                     Transportio
@@ -92,7 +95,7 @@
 
         <!-- start breadcrumb section -->
         <section id="breadcrumb-area">
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                 <h1 class="name">About us</h1>
                 <span>
                     <span>
@@ -110,11 +113,12 @@
     <main>
         <section id="why-us">
             <div class="container">
-                <div class="headline">
+                <div class="headline" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
                     <h2 class="subtitle">We Are Professional Logistics & cargo Agency</h2>
                 </div>
                 <div class="inner">
-                    <div class="cards">
+                    <div class="cards" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                         <ul>
                             <li>
                                 <div class="icon-box">
@@ -166,13 +170,15 @@
                     </div>
                     <div class="imgs">
                         <img src="./assets/imgs/about-v3-img2.jpg" alt="">
-                        <img  class="rotate-img" src="./assets/imgs/about-v3-img1.jpg" alt="">
+                        <img class="rotate-img" src="./assets/imgs/about-v3-img1.jpg" alt="">
                     </div>
                 </div>
-                <div class="headline">
+                <div class="headline" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
                     <h2 class="subtitle">We are Transportio</h2>
                 </div>
-                <div class="text">
+                <div class="text" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab earum, voluptatibus et ex pariatur
                         est a qui. Debitis odit sit, laborum, numquam dicta delectus maiores iste soluta beatae libero
                         excepturi!</p>
@@ -189,7 +195,8 @@
             </div>
         </section>
         <!-- video section -->
-        <section id="video-area">
+        <section id="video-area" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
             <div class="content">
                 <a href="#" class="video-btn">
                     <span>
@@ -203,7 +210,7 @@
         <!-- fact-counter section -->
         <section id="fact-counter">
             <div class="container">
-                <ul>
+                <ul data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                     <li>
                         <p class="top">
                             <span class="num" data-count="20">0</span>
@@ -213,14 +220,14 @@
                     </li>
                     <li>
                         <p class="top">
-                            <span class="num" data-count="3000">0</span>
+                            <span class="num" data-count="200">0</span>
                             <span class="plus">+</span>
                         </p>
                         <p class="text">Delivered Packages</p>
                     </li>
                     <li>
                         <p class="top">
-                            <span class="num" data-count="2300">0</span>
+                            <span class="num" data-count="100">0</span>
                             <span class="plus">+</span>
                         </p>
                         <p class="text">Satisfied Clients</p>
@@ -241,11 +248,12 @@
         <!-- services section -->
         <section id="service">
             <div class="container">
-                <div class="headline">
+                <div class="headline" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
                     <h2 class="subtitle">Our Services</h2>
                     </p>
                 </div>
-                <ul>
+                <ul data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                     <li>
                         <div class="card" id="1" style="background-image: url('./assets/imgs/air_freight.jpg');">
                             <h3 class="card-title">
@@ -366,11 +374,12 @@
         <!-- projects section -->
         <section id="projects">
             <div class="container">
-                <div class="headline">
+                <div class="headline" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
                     <h2 class="subtitle">Our Projects</h2>
-
                 </div>
-                <ul class="projects">
+                <ul class="projects" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine">
                     <li>
                         <div class="projects-card">
                             <div class="card-img">
@@ -497,14 +506,12 @@
     </main>
 
 
-
     <!-- start footer -->
     <footer class="footer">
         <div class="container">
-
             <div class="footer-top">
                 <div class="footer-brand">
-                    <a href="#" class="logo">Transportio</a>
+                    <a href="index.html" class="logo">Transportio</a>
                     <p class="footer-text">
                         Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
                     </p>
@@ -542,13 +549,13 @@
                         <p class="footer-list-title">Quick Links</p>
                     </li>
                     <li class="footer-link">
-                        <a href="#about">About</a>
+                        <a href="index.html#about">About</a>
                     </li>
                     <li class="footer-link">
-                        <a href="#service">Services</a>
+                        <a href="index.html#service">Services</a>
                     </li>
                     <li class="footer-link">
-                        <a href="#blog">Blog</a>
+                        <a href="index.html#blog">Blog</a>
                     </li>
                     <li class="footer-link">
                         <a href="faq.html">FAQ</a>
@@ -563,43 +570,42 @@
                         <p class="footer-list-title">Services</p>
                     </li>
 
-                    <li class="footer-link">
-                        <a href="#">Warehouse</a>
+                    <li class="footer-link" id="5">
+                        <a href="service-detail.html">Warehouse</a>
                     </li>
 
-                    <li class="footer-link">
-                        <a href="#" class="footer-link">Air Freight</a>
+                    <li class="footer-link" id="1">
+                        <a href="service-detail.html" class="footer-link">Air Freight</a>
                     </li>
 
-                    <li class="footer-link">
-                        <a href="#">Ocean Freight</a>
+                    <li class="footer-link" id="3">
+                        <a href="service-detail.html">Ocean Freight</a>
                     </li>
 
-                    <li class="footer-link">
-                        <a href="#">Road Freight</a>
+                    <li class="footer-link" id="2">
+                        <a href="service-detail.html">Road Freight</a>
                     </li>
 
-                    <li class="footer-link">
-                        <a href="#">Packaging</a>
+                    <li class="footer-link" id="4">
+                        <a href="service-detail.html">Rail Freight</a>
                     </li>
 
                 </ul>
                 <ul class="footer-list">
-
                     <li>
                         <p class="footer-list-title">Community</p>
                     </li>
 
                     <li class="footer-link">
-                        <a href="#">Business Consulting</a>
+                        <a href="contact.html">Business Consulting</a>
                     </li>
 
                     <li class="footer-link">
-                        <a href="#">Testimonials</a>
+                        <a href="index.html#feature">Estimation</a>
                     </li>
 
                     <li class="footer-link">
-                        <a href="#">Track Your Shipment</a>
+                        <a href="tracking.html">Track Your Shipment</a>
                     </li>
 
                     <li class="footer-link">
@@ -632,7 +638,12 @@
 <script src="./assets/js/detail.js"></script>
 <script src="./assets/js/slick.js"></script>
 <!-- added slick -->
-<script src="./assets/scss/slick-1.8.1/slick/slick.min.js"></script>
-<script src="./assets/scss/slick-1.8.1/slick/slick.js"></script>
+<script src="./assets/slick/slick-1.8.1/slick/slick.min.js"></script>
+<script src="./assets/slick/slick-1.8.1/slick/slick.js"></script>
+<!-- added aos -->
+<script src="./assets/aos/aos-master/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

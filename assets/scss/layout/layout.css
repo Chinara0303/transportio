@@ -368,12 +368,12 @@ h2, h3 {
 }
 
 header {
-  min-height: 90vh;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   -webkit-padding-before: var(--fs-10);
-          padding-block-start: var(--fs-10);
+  padding-block-start: var(--fs-10);
   position: relative;
 }
 header .header-container {
@@ -502,6 +502,9 @@ header .navbar.active {
 }
 header #hero {
   padding-top: 70px;
+}
+header #hero .container .hero-content{
+  margin-left: 20px;
 }
 header #hero .container .hero-content h2 {
   font-size: 6.6rem;

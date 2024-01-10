@@ -1,7 +1,9 @@
+
 'use strict';
 
 let numberElements = document.querySelectorAll('.num');
 let numbers = [];
+let isCounterIncremented = false;
 
 numberElements.forEach(num => {
     numbers.push(num.getAttribute('data-count'));
@@ -9,14 +11,17 @@ numberElements.forEach(num => {
 
 function incrementCounter() {
     numbers.forEach((element, index) => {
-        for (let i = index; i < element; i++) {
+        for (let i = 0; i <= element; i++) {
             setTimeout(() => {
-                i++;
                 numberElements[index].textContent = i;
-            }, i / 100);
-
+            }, i * 10);
         }
     });
 }
 
-incrementCounter();
+window.addEventListener("scroll", function () {
+    if (!isCounterIncremented && this.window.scrollY >= 2000) {
+        incrementCounter();
+        isCounterIncremented = true;
+    }
+});
