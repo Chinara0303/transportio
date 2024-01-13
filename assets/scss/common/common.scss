@@ -33,7 +33,8 @@
 .branch-count,
 .line,
 .hero-shape-img,
-.feature-head img {
+.feature-head img,
+#solution img {
     @keyframes move {
         0% {
             transform: translateY(0);

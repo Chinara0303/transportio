@@ -10,6 +10,8 @@ accordions.forEach(function (accordion) {
     let content = accordion.querySelector('.accordion-content');
 
     header.addEventListener('click', function () {
+        debugger
+
         if (openAccordion && openAccordion !== accordion) {
             let openContent = openAccordion.querySelector('.accordion-content');
             openContent.classList.remove('d-block');

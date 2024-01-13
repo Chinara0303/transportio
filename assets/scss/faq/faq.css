@@ -159,14 +159,10 @@ h2, h3 {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  transition: all 5s ease-out;
 }
 #faq .container .accordion-container .accordion-header p {
   font-size: var(--fs-9);
   font-weight: 600;
-}
-#faq .container .accordion-container .active-accordion {
-  transition: all 0.4s ease-in-out;
 }
 #faq .container .accordion-container .active-accordion p,
 #faq .container .accordion-container .active-accordion i {
@@ -177,13 +173,9 @@ h2, h3 {
   margin-top: 20px;
   font-size: 18px;
   border-top: 1px solid var(--light-gray);
-  transition: max-height 3s ease-in-out;
-  /* Adjust the duration and easing as needed */
-  max-height: 0;
 }
 #faq .container .accordion-container .d-block {
   display: block;
-  max-height: 1000px;
 }
 #faq .container .d-none {
   display: none;

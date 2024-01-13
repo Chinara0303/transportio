@@ -16,7 +16,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-
+    <!-- added aos -->
+    <link rel="stylesheet" href="./assets/aos/aos-master/dist/aos.css">
     <!-- added css -->
     <link rel="stylesheet" href="./assets/scss/faq/faq.css">
     <link rel="stylesheet" href="./assets/scss/common/common.css">
@@ -27,8 +28,8 @@
     <div class="overlay"></div>
 
     <!-- start header -->
-    <header style="background-image: url('./assets/imgs/hero-banner.jpg');">
-        <div class="header-container">
+    <header style="background-image: url('./assets/imgs/hero-banner.jpg');" >
+        <div class="header-container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
             <h1>
                 <a class="logo" href="#">
                     Transportio
@@ -85,7 +86,7 @@
 
         <!-- start breadcrumb section -->
         <section id="breadcrumb-area">
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
                 <h1 class="name">FAQ</h1>
                 <span>
                     <a href="index.html">Home </a>
@@ -104,7 +105,8 @@
     <main>
         <section id="faq">
             <div class="container">
-                <div class="left">
+                <div class="left" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
+                data-aos-easing="ease-in-sine">
                     <div class="headline">
                         <div class="title">
                             <h2 class="subtitle">Frequently Asked Questions</h2>
@@ -509,9 +511,10 @@
                             </div>
                         </div>
                     </div>
-                    <img style="width: 100%;"  src="./assets/imgs/faq2.jpg" alt="">
+                    <img style="width: 100%;" src="./assets/imgs/faq2.jpg" alt="">
                 </div>
-                <div class="right">
+                <div class="right" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
+                data-aos-easing="ease-in-sine">
                     <img src="./assets/imgs/faq.jpg" alt="">
                     <div class="content">
                         <div class="accordion-container">
@@ -595,127 +598,127 @@
         <!-- end newsletter section -->
     </main>
 
-   <!-- start footer -->
- <footer class="footer">
-    <div class="container">
-        <div class="footer-top">
-            <div class="footer-brand">
-                <a href="index.html" class="logo">Transportio</a>
-                <p class="footer-text">
-                    Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
-                </p>
-                <ul class="social-list">
-                    <li>
-                        <a href="#" class="social-link">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
+    <!-- start footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">Transportio</a>
+                    <p class="footer-text">
+                        Many desktop publishing packages and web page editors now use are dolra Ipsum as their default.
+                    </p>
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#" class="social-link">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#" class="social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
 
+                        <li>
+                            <a href="#" class="social-link">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="footer-list">
                     <li>
-                        <a href="#" class="social-link">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
+                        <p class="footer-list-title">Quick Links</p>
+                    </li>
+                    <li class="footer-link">
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="index.html#service">Services</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="index.html#blog">Blog</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="faq.html">FAQ</a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="contact.html">Contact Us</a>
                     </li>
 
                 </ul>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Services</p>
+                    </li>
 
+                    <li class="footer-link" id="5">
+                        <a href="service-detail.html">Warehouse</a>
+                    </li>
+
+                    <li class="footer-link" id="1">
+                        <a href="service-detail.html" class="footer-link">Air Freight</a>
+                    </li>
+
+                    <li class="footer-link" id="3">
+                        <a href="service-detail.html">Ocean Freight</a>
+                    </li>
+
+                    <li class="footer-link" id="2">
+                        <a href="service-detail.html">Road Freight</a>
+                    </li>
+
+                    <li class="footer-link" id="4">
+                        <a href="service-detail.html">Rail Freight</a>
+                    </li>
+
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title">Community</p>
+                    </li>
+
+                    <li class="footer-link">
+                        <a href="contact.html">Business Consulting</a>
+                    </li>
+
+                    <li class="footer-link">
+                        <a href="index.html#feature">Estimation</a>
+                    </li>
+
+                    <li class="footer-link">
+                        <a href="tracking.html">Track Your Shipment</a>
+                    </li>
+
+                    <li class="footer-link">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+
+                    <li class="footer-link">
+                        <a href="terms.html">Terms & Condition</a>
+                    </li>
+
+                </ul>
             </div>
 
-            <ul class="footer-list">
-                <li>
-                    <p class="footer-list-title">Quick Links</p>
-                </li>
-                <li class="footer-link">
-                    <a href="index.html#about">About</a>
-                </li>
-                <li class="footer-link">
-                    <a href="index.html#service">Services</a>
-                </li>
-                <li class="footer-link">
-                    <a href="index.html#blog">Blog</a>
-                </li>
-                <li class="footer-link">
-                    <a href="faq.html">FAQ</a>
-                </li>
-                <li class="footer-link">
-                    <a href="contact.html">Contact Us</a>
-                </li>
-
-            </ul>
-            <ul class="footer-list">
-                <li>
-                    <p class="footer-list-title">Services</p>
-                </li>
-
-                <li class="footer-link" id="5">
-                    <a href="service-detail.html">Warehouse</a>
-                </li>
-
-                <li class="footer-link" id="1">
-                    <a href="service-detail.html" class="footer-link">Air Freight</a>
-                </li>
-
-                <li class="footer-link" id="3">
-                    <a href="service-detail.html">Ocean Freight</a>
-                </li>
-
-                <li class="footer-link" id="2">
-                    <a href="service-detail.html">Road Freight</a>
-                </li>
-
-                <li class="footer-link" id="4">
-                    <a href="service-detail.html">Rail Freight</a>
-                </li>
-
-            </ul>
-            <ul class="footer-list">
-                <li>
-                    <p class="footer-list-title">Community</p>
-                </li>
-
-                <li class="footer-link">
-                    <a href="contact.html">Business Consulting</a>
-                </li>
-
-                <li class="footer-link">
-                    <a href="index.html#feature">Estimation</a>
-                </li>
-
-                <li class="footer-link">
-                    <a href="tracking.html">Track Your Shipment</a>
-                </li>
-
-                <li class="footer-link">
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                </li>
-
-                <li class="footer-link">
-                 <a href="terms.html">Terms & Condition</a>
-                </li>
-
-            </ul>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2022 Transportio. All Rights Reserved by <a href="#" class="copyright-link">John Doe</a>
+                </p>
+            </div>
         </div>
-
-        <div class="footer-bottom">
-            <p class="copyright">
-                &copy; 2022 Transportio. All Rights Reserved by <a href="#" class="copyright-link">John Doe</a>
-            </p>
-        </div>
-    </div>
-</footer>
-<!-- end footer -->
+    </footer>
+    <!-- end footer -->
 
 
     <!-- back to top button -->
@@ -725,5 +728,10 @@
 </body>
 <script src="./assets/js/common.js"></script>
 <script src="./assets/js/faq.js"></script>
+<!-- added aos -->
+<script src="./assets/aos/aos-master/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

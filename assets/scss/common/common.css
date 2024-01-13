@@ -114,7 +114,8 @@ h2, h3 {
 .branch-count,
 .line,
 .hero-shape-img,
-.feature-head img {
+.feature-head img,
+#solution img {
   -webkit-animation: move 2s ease-in-out infinite alternate;
           animation: move 2s ease-in-out infinite alternate;
 }

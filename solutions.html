@@ -5,22 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Transportio - To every direction</title>
     <!-- added font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- added google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- added aos -->
     <link rel="stylesheet" href="./assets/aos/aos-master/dist/aos.css">
-    <!-- added css -->
-    <link rel="stylesheet" href="./assets/scss/detail/detail.css">
-    <link rel="stylesheet" href="./assets/scss/layout/layout.css">
-    <link rel="stylesheet" href="./assets/scss/common/common.css">
 
+    <!-- added css -->
+    <link rel="stylesheet" href="./assets/scss/common/common.css">
+    <link rel="stylesheet" href="./assets/scss/layout/layout.css">
+    <link rel="stylesheet" href="./assets/scss/solution/solution.css">
 </head>
 
-<body id="top">
+<body>
     <div class="overlay"></div>
+
 
     <!-- start header -->
     <header style="background-image: url('./assets/imgs/hero-banner.jpg');">
@@ -82,13 +90,13 @@
         <!-- start breadcrumb section -->
         <section id="breadcrumb-area">
             <div class="container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-sine">
-                <h1 class="service-name"></h1>
+                <h1 class="name">Solutions & Specialized</h1>
                 <span>
                     <a href="index.html">Home </a>
                     <i class="fa-solid fa-arrow-right fa-sm"></i>
-                    <a href="index.html#service">Services </a>
+                    <a href="index.html#feature">Estimation </a>
                     <i class="fa-solid fa-arrow-right fa-sm"></i>
-                    <a class="service-name" href="blog.html"> </a>
+                    <a href="privacy-policy.html">Solutions & Specialized</a>
                 </span>
             </div>
         </section>
@@ -98,134 +106,94 @@
 
     </header>
     <!-- end header -->
-
     <main>
-        <section id="detail">
-            <div class="container">
-                <div class="left" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
-                    data-aos-easing="ease-in-sine">
-                    <div class="img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="content-header">
-                        <div class="icon">
-                            <img src="" alt="">
-                        </div>
-                        <div class="title">
-                            <h2 class="service-name"></h2>
-                        </div>
-                    </div>
-                    <div class="content">
-                    </div>
-                    <div class="content-header">
-                        <div class="title">
-                            <h2>Benefit of Service</h2>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <p>Readable and Packages editors now use Lorem Ipsum as their default model textlayout. The
-                            point of using the some is that it has a more-or-less normal distribution of letters as
-                            opposed to using.</p>
-                    </div>
-                    <div class="boxes">
-                        <div class="box">
-                            <div class="icon-box">
-                                <img src="./assets/imgs/hammer-service.jpg" alt="">
-                            </div>
-                            <div class="text">
-                                <p>Lorem, ipsum dolor.</p>
-                            </div>
-                        </div>
-                        <div class="box" style="background-color:  hsl(202, 72%, 15%);color: hsl(0, 0%, 100%);">
-                            <div class="icon-box">
-                                <img src="./assets/imgs/hammer-service.jpg" alt="">
-                            </div>
-                            <div class="text">
-                                <p>Lorem, ipsum dolor.</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icon-box">
-                                <img src="./assets/imgs/hammer-service.jpg" alt="">
-                            </div>
-                            <div class="text">
-                                <p>Lorem, ipsum dolor.</p>
-                            </div>
-                        </div>
+        <section id="solution">
+            <img class="plane" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine" src="./assets/imgs/about-one__img1.jpg" alt="">
+            <img class="human" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine" src="./assets/imgs/solution.png" alt="">
+            <img class="mining" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine" src="./assets/imgs/solution2.png" alt="">
+            <div class="container" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="headline">
+                    <h2 class="subtitle">Transportation Solutions</h2>
+                </div>
+
+                <div class="content-header">
+                    <div class="title">
+                        <h2>Transportation for the Energy Industry</h2>
                     </div>
                 </div>
-                <div class="right">
-                    <div class="services-list">
-                        <div class="title">
-                            <h2>Services List</h2>
-                        </div>
-                        <ul class="sidebar-services-list">
-                            <li id="1">
-                                <a href="#">
-                                    <span>Air Freight</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="2">
-                                <a href="#">
-                                    <span>Road Freight</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="3">
-                                <a href="">
-                                    <span>Ocean Freight</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="4">
-                                <a href="">
-                                    <span>Rail Freight</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="5">
-                                <a href="">
-                                    <span>Warehousing</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                            <li id="6">
-                                <a href="">
-                                    <span>Project Cargo</span>
-                                    <div class="icon">
-                                        <i class="fa-solid fa-arrow-right fa-sm"></i>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="video-area">
-                        <div class="img">
-                            <img src="./assets/imgs/services-details-img3.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <a href="#" class="video-btn">
-                                <span class="txt">Play</span>
-                            </a>
-                        </div>
+                <div class="content">
+                    <p>Transport Chainé enjoys a wealth of expertise in the transportation of oversized goods for the
+                        energy sector.
+                    </p>
+                    <ul>
+                        <p>We Transport</p>
+                        <li>Transformers </li>
+                        <li>Electrical equipment</li>
+                        <li>Electric motors</li>
+                        <li>Turbines </li>
+                        <li>Generator units</li>
+                        <li>and much more</li>
+                    </ul>
+                    <p>
+                        Moreover, our entire staff is qualified to work in electrical substations and hydroelectric
+                        power plants. We also offer insurance coverage for a minimum amount of two million dollars to
+                        protect your equipment.
+                    </p>
+                </div>
+                <div class="content-header ml-40">
+                    <div class="title">
+                        <h2>Transportation Solutions Tailored to the Mining Industry</h2>
                     </div>
                 </div>
+                <div class="content ml-40">
+                    <p>The Transport Chainé team is able to meet the unique challenges faced by the mining sector
+                        without a hitch!
+                    </p>
+                    <ul>
+                        <li>Difficult to reach locations</li>
+                        <li>Intermodal transportation</li>
+                        <li>Rough terrain</li>
+                        <li>Transportation of oversized equipment</li>
+                        <li>Complex handling</li>
+                    </ul>
+                    <p>
+                        Transport Chainé knows all the ins and outs of the mining world. Avoid delays and unpleasant
+                        surprises. Choose a team of true professionals! We also offer insurance coverage for a minimum
+                        amount of two million dollars to protect your equipment.
+                    </p>
+                </div>
+
+                <div class="content-header">
+                    <div class="title">
+                        <h2>Specialized Transportation for Large Projects</h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>Do you think big? We do too! Transport Chainé is your best ally when it comes to transporting
+                        oversized and complex material associated with large projects.
+                    </p>
+                    <ul>
+                        <li>Heavy machinery</li>
+                        <li>Complex equipment</li>
+                        <li>Site buildings</li>
+                        <li>Generators</li>
+                        <li>Large mechanical parts</li>
+                        <li>and much more</li>
+                    </ul>
+                    <p>
+                        We have the equipment required to ensure proper and safe handling of heavy material. We also
+                        offer insurance coverage for a minimum amount of two million dollars to protect your equipment.
+                    </p>
+                </div>
+
             </div>
         </section>
-
-          <!-- start newsletter section -->
-          <section id="newsletter">
+        <!-- start newsletter section -->
+        <section id="newsletter">
             <div class="newsletter-area">
                 <div class="container">
                     <div class="img">
@@ -238,15 +206,11 @@
                             <button type="submit">Subscribe Now</button>
                         </form>
                     </div>
-
                 </div>
-
             </div>
         </section>
         <!-- end newsletter section -->
-
     </main>
-
     <!-- start footer -->
     <footer class="footer">
         <div class="container">
@@ -369,19 +333,16 @@
     </footer>
     <!-- end footer -->
 
-
     <!-- back to top button -->
     <a href="#top" class="back-top-btn">
         <i class="fa-solid fa-angle-up"></i>
     </a>
-
 </body>
+<script src="./assets/js/common.js"></script>
 <!-- added aos -->
 <script src="./assets/aos/aos-master/dist/aos.js"></script>
 <script>
     AOS.init();
 </script>
 
-<script src="./assets/js/common.js"></script>
-<script src="./assets/js/detail.js"></script>
 </html>

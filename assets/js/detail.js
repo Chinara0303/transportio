@@ -17,9 +17,7 @@ for (const title of titles) {
     title.innerHTML = service.name;
 }
 
-
-
-let servicesList = document.querySelectorAll('.right .sidebar-services-list li');
+let servicesList = document.querySelectorAll('#detail .right .sidebar-services-list li');
 
 for (const serviceList of servicesList) {
     if (serviceList.id == service.id) {

@@ -62,7 +62,7 @@
 
                 .box {
                     width: 30%;
-                    background-color: var(--cultured-3);
+                    background-color: var(--dark-orange);
                     padding: 40px 10px 33px;
                     border-radius: 4px;
                     .icon-box {
@@ -71,13 +71,13 @@
                         justify-content: center;
                         width: 70px;
                         height: 70px;
-                        background: var(--dark-orange);
+                        background: var(--white);
                         border-radius: 50%;
                         margin: 0 auto 13px;
                         z-index: 1;
 
-                        i {
-                            transition: transform 0.4s ease;
+                        img{
+                            width: 70%;
                         }
 
                     }
